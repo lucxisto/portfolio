@@ -30,5 +30,19 @@ nav ul li {
   display: inline;
   margin: 0 10px;
   text-transform: uppercase;
-  aaaa
+}
+
+#about-me {
+  position: relative;
+}
+
+#about-me img{
+  width: 500px;
+  display: inline-block;
+}
+
+#about-me p{
+  display: inline-block;
+  border: 5px red solid;
+  position: absolute;
 }
