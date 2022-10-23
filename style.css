@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   --bg-color: rgb(48,48,48);
+  --bg-color-2: rgb(173, 173, 230);
   --txt-color: rgb(255,255,255);
 }
 
@@ -34,15 +35,32 @@ nav ul li {
 
 #about-me {
   position: relative;
+  background: var(--bg-color-2) ;
 }
 
-#about-me img{
+#slide {
+  display: inline-block;
+  position: absolute;
+}
+#slide ul li {
+  height: 100px;
+  width: 100px;
+}
+
+#mypicture {
+  position: absolute;
+  left: 100px;
   width: 500px;
   display: inline-block;
 }
 
 #about-me p{
   display: inline-block;
-  border: 5px red solid;
+  /* border: 5px red solid; */
   position: absolute;
+  max-height: 480px;
+  left: 600px;
+  text-align: justify;
+  margin: 10px;
+  overflow: auto;
 }
