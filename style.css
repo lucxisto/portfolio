@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   --bg-color: rgb(48,48,48);
-  --bg-color-2: rgb(173, 173, 230);
+  --bg-color-2: rgb(155, 155, 155);
   --txt-color: rgb(255,255,255);
   --txt-color-2: rgb(0, 0, 0);
 }
@@ -10,11 +10,13 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
+  text-align: center;
 }
 
 header {
   background-color: var(--bg-color);
   color: var(--txt-color);
+  text-align: start;
 } 
 
 header h1 {
@@ -37,25 +39,41 @@ ul {
   list-style: none;
 }
 
-nav ul li {
-  display: inline;
-  margin: 0 10px;
-  text-transform: uppercase;
+#main-menu ul {
+  display: flex;
+  flex-direction: row; 
 }
+
+#main-menu ul li a {
+  text-transform: uppercase;
+  padding: 10px;
+  transition: background 400ms;
+}
+
+#main-menu ul li a:hover {
+  background: var(--bg-color-2);
+  color: var(--txt-color-2);
+}
+
+#my-skills, #my-projects, #contact, .dinamic-paragraph {
+  display: none;
+}
+
+footer {
+  background-color: var(--bg-color);
+  padding: 100px;
+}
+
+/*About Me*/
 
 #about-me {
-  position: relative;
+  display: flex;
   background: var(--bg-color-2) ;
-  visibility: visible;
-}
-
-#my-skills, #my-projects, #contact {
-  visibility: hidden;
+  max-height: fit-content;
 }
 
 #slide {
   display: inline-block;
-  position: absolute;
 }
 
 #slide ul li {
@@ -64,15 +82,13 @@ nav ul li {
 }
 
 #mypicture {
-  position: absolute;
   left: 100px;
   width: 500px;
   display: inline-block;
 }
 
-#about-me p{
+#main-info {
   display: inline-block;
-  position: absolute;
   max-height: 480px;
   left: 600px;
   text-align: justify;
