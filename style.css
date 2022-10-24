@@ -156,7 +156,7 @@ footer {
 .about-me {
   display: none;
   background: var(--bg-color-2) ;
-  max-height: fit-content;
+  max-height: 500px;
 }
 
 .dinamic-paragraph {
