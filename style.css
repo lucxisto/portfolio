@@ -45,19 +45,40 @@ ul {
   align-items: flex-start;
 }
 
-#main-menu ul li a , #main-menu ul li {
+#main-menu ul li label , #main-menu ul li {
   text-transform: uppercase;
   padding: 10px;
   transition: background 400ms;
 }
 
-#main-menu ul li a:hover {
+#main-menu ul li label:hover {
   background: var(--bg-color-2);
   color: var(--txt-color-2);
 }
 
-#my-skills, #my-projects, #contact, .dinamic-paragraph {
+input#about-me:checked + .about-me {
+  display: flex;
+}
+
+input#my-skills:checked + .my-skills {
+  display: flex;
+}
+
+input#my-projects:checked + .my-projects {
+  display: flex;
+}
+
+input#contact:checked + .contact {
+  display: flex;
+}
+
+input[type =  radio] {
   display: none;
+}
+
+.my-skills, .my-projects, .contact, .dinamic-paragraph {
+  display: none;
+  
 }
 
 footer {
@@ -67,8 +88,8 @@ footer {
 
 /*About Me*/
 
-#about-me {
-  display: flex;
+.about-me {
+  display: none;
   background: var(--bg-color-2) ;
   max-height: fit-content;
 }
@@ -78,16 +99,20 @@ footer {
   width: 100px;
 }
 
+
 #slide ul li img {
   opacity: 75%;
   filter: grayscale(10);
   transition: 600ms;
+  position: relative;
+  z-index: 1;
 }
 
 #slide ul li img:hover {
   opacity: 100%;
   filter: grayscale(0);
   transform: scale(1.2);
+  z-index: 2;
 }
 
 #mypicture {
@@ -104,3 +129,4 @@ footer {
   margin: 10px;
   overflow: auto;
 }
+
