@@ -76,6 +76,26 @@ input[type =  radio] {
   display: none;
 }
 
+input#basket-interests:checked + #basket {
+  display: flex;
+}
+
+input#gaming-interests:checked + #gaming {
+  display: flex;
+}
+
+input#cooking-interests:checked + #cooking {
+  display: flex;
+}
+
+input#rpg-interests:checked + #rpging {
+  display: flex;
+}
+
+input#rock-interests:checked + #rocking {
+  display: flex;
+}
+
 .my-skills, .my-projects, .contact, .dinamic-paragraph {
   display: none;
   
@@ -94,16 +114,19 @@ footer {
   max-height: fit-content;
 }
 
+.dinamic-paragraph {
+  display: none;
+}
+
 #slide ul li {
   height: 100px;
   width: 100px;
 }
 
-
 #slide ul li img {
   opacity: 75%;
   filter: grayscale(10);
-  transition: 600ms;
+  transition: 300ms;
   position: relative;
   z-index: 1;
 }
@@ -129,4 +152,3 @@ footer {
   margin: 10px;
   overflow: auto;
 }
-
