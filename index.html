@@ -11,18 +11,77 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body> 
-  <header>
+ <header>
     <h1>Lucas Xisto - Front-End Jr.</h1>
-    <nav>
+    <nav id="main-menu">
       <ul>
-        <li>About me</li>
-        <li>My skills</li>
-        <li>My projects</li>
-        <li>Contact</li>
+        <li><label for="about-me">About me</label></li>
+        <li><label for="my-skills">My skills</label></li>
+        <li><label for="my-projects">My projects</label></li>
+        <li><label for="contact">Contact</label></li>
       </ul>
     </nav>
   </header>
-  <main></main>
-  <footer></footer>
+  <main>
+    <input type="radio" name="menu" id="about-me" checked>
+    <section class="about-me">
+      <aside id="slide">
+        <ul>
+          <li><label for="basket-interests"><img src="./img/basket.jpg" alt="Man Playing Basketball"></label></li>
+          <li><label for="gaming-interests"><img src="./img/game.jpg" alt="Gaming"></label></li>
+          <li><label for="cooking-interests"><img src="./img/cooking.jpg" alt="Cooking"></label></li>
+          <li><label for="rpg-interests"><img src="./img/rpg.jpg" alt="Playing RPG"></label></li>
+          <li><label for="rock-interests"><img src="./img/rock.jpg" alt="Playing Guitar"></label></li>
+        </ul>
+      </aside>
+      
+      <label for="main-info-content"><img src="./img/mypic.jpeg" id="mypicture" alt="My Picture"></label>
+      <input type="radio" name="pic-menu" id="main-info-content" checked>
+      <div id="main-info"  class="dinamic-paragraph">
+        <p>Sobre mim - Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptas itaque soluta nisi maxime eius cupiditate quibusdam doloribus corrupti explicabo omnis ut nihil eos, veritatis rem. Asperiores repudiandae similique praesentium!Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur assumenda quam non voluptatem ad id, excepturi totam minima deserunt error quia quos labore corporis dolores officia, commodi maiores illum. Blanditiis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi facere alias quas dignissimos. Impedit, temporibus dolores dolore accusantium explicabo non cumque soluta inventore neque ipsa porro alias blanditiis nulla! Esse.</p>
+      </div>
+      
+      <input type="radio" name="pic-menu" id="basket-interests">
+      <div id="basket" class="dinamic-paragraph">
+        <p>Basquetinho - Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptas itaque soluta nisi maxime eius cupiditate quibusdam doloribus corrupti explicabo omnis ut nihil eos, veritatis rem. Asperiores repudiandae similique praesentium!Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur assumenda quam non voluptatem ad id, excepturi totam minima deserunt error quia quos labore corporis dolores officia, commodi maiores illum. Blanditiis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi facere alias quas dignissimos. Impedit, temporibus dolores dolore accusantium explicabo non cumque soluta inventore neque ipsa porro alias blanditiis nulla! Esse.</p>
+      </div>
+      
+      <input type="radio" name="pic-menu" id="gaming-interests">
+      <div id="gaming" class="dinamic-paragraph">
+        <p>Jogos -Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptas itaque soluta nisi maxime eius cupiditate quibusdam doloribus corrupti explicabo omnis ut nihil eos, veritatis rem. Asperiores repudiandae similique praesentium!Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur assumenda quam non voluptatem ad id, excepturi totam minima deserunt error quia quos labore corporis dolores officia, commodi maiores illum. Blanditiis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi facere alias quas dignissimos. Impedit, temporibus dolores dolore accusantium explicabo non cumque soluta inventore neque ipsa porro alias blanditiis nulla! Esse.</p>
+      </div>
+
+      <input type="radio" name="pic-menu" id="cooking-interests">
+      <div id="cooking" class="dinamic-paragraph">
+        <p>Cozinha - Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptas itaque soluta nisi maxime eius cupiditate quibusdam doloribus corrupti explicabo omnis ut nihil eos, veritatis rem. Asperiores repudiandae similique praesentium!Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur assumenda quam non voluptatem ad id, excepturi totam minima deserunt error quia quos labore corporis dolores officia, commodi maiores illum. Blanditiis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi facere alias quas dignissimos. Impedit, temporibus dolores dolore accusantium explicabo non cumque soluta inventore neque ipsa porro alias blanditiis nulla! Esse.</p>
+      </div>
+      
+      <input type="radio" name="pic-menu" id="rpg-interests">
+      <div id="rpging" class="dinamic-paragraph">
+        <p>RPG - Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptas itaque soluta nisi maxime eius cupiditate quibusdam doloribus corrupti explicabo omnis ut nihil eos, veritatis rem. Asperiores repudiandae similique praesentium!Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur assumenda quam non voluptatem ad id, excepturi totam minima deserunt error quia quos labore corporis dolores officia, commodi maiores illum. Blanditiis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi facere alias quas dignissimos. Impedit, temporibus dolores dolore accusantium explicabo non cumque soluta inventore neque ipsa porro alias blanditiis nulla! Esse.</p>
+      </div>
+      
+      <input type="radio" name="pic-menu" id="rock-interests">
+      <div id="rocking" class="dinamic-paragraph">
+        <p>Rosk - Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptas itaque soluta nisi maxime eius cupiditate quibusdam doloribus corrupti explicabo omnis ut nihil eos, veritatis rem. Asperiores repudiandae similique praesentium!Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur assumenda quam non voluptatem ad id, excepturi totam minima deserunt error quia quos labore corporis dolores officia, commodi maiores illum. Blanditiis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi facere alias quas dignissimos. Impedit, temporibus dolores dolore accusantium explicabo non cumque soluta inventore neque ipsa porro alias blanditiis nulla! Esse.</p>
+      </div>
+    </section>
+    <input type="radio" name="menu" id="my-skills">
+    <section class="my-skills">
+      <p>SKILLABILIDADE -----dolor sit, amet consectetur adipisicing elit. Eligendi quibusdam beatae quo provident veritatis eos perferendis itaque minus enim esse. Molestias tempora natus tempore sequi doloremque temporibus quibusdam quasi atque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nesciunt nisi nulla dicta quae vitae labore, eligendi deserunt laudantium minima autem reiciendis minus deleniti debitis temporibus nemo odio dolor unde? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores sed quaerat, veniam ratione accusamus quos temporibus illum earum molestiae est consectetur eos nisi alias cupiditate expedita nostrum impedit mollitia quidem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptates tenetur fugiat repellat beatae, aliquam voluptatibus, doloremque facere laudantium sapiente et, eveniet sequi quaerat ut perspiciatis. Distinctio rerum maiores nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus autem sed pariatur cupiditate delectus, odio enim similique suscipit culpa atque magnam aut error sequi quidem voluptas unde a est nesciunt?</p>
+    </section>
+    <input type="radio" name="menu" id="my-projects">
+    <section class="my-projects">
+      <p>PROJETO amet consectetur adipisicing elit. Eligendi quibusdam beatae quo provident veritatis eos perferendis itaque minus enim esse. Molestias tempora natus tempore sequi doloremque temporibus quibusdam quasi atque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nesciunt nisi nulla dicta quae vitae labore, eligendi deserunt laudantium minima autem reiciendis minus deleniti debitis temporibus nemo odio dolor unde? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores sed quaerat, veniam ratione accusamus quos temporibus illum earum molestiae est consectetur eos nisi alias cupiditate expedita nostrum impedit mollitia quidem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptates tenetur fugiat repellat beatae, aliquam voluptatibus, doloremque facere laudantium sapiente et, eveniet sequi quaerat ut perspiciatis. Distinctio rerum maiores nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus autem sed pariatur cupiditate delectus, odio enim similique suscipit culpa atque magnam aut error sequi quidem voluptas unde a est nesciunt?</p>
+    </section>
+    <input type="radio" name="menu" id="contact">
+    <section class="contact">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quibusdam beatae quo provident veritatis eos perferendis itaque minus enim esse. Molestias tempora natus tempore sequi doloremque temporibus quibusdam quasi atque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nesciunt nisi nulla dicta quae vitae labore, eligendi deserunt laudantium minima autem reiciendis minus deleniti debitis temporibus nemo odio dolor unde? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores sed quaerat, veniam ratione accusamus quos temporibus illum earum molestiae est consectetur eos nisi alias cupiditate expedita nostrum impedit mollitia quidem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptates tenetur fugiat repellat beatae, aliquam voluptatibus, doloremque facere laudantium sapiente et, eveniet sequi quaerat ut perspiciatis. Distinctio rerum maiores nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus autem sed pariatur cupiditate delectus, odio enim similique suscipit culpa atque magnam aut error sequi quidem voluptas unde a est nesciunt?</p>
+    </section>
+  </main>
+  <footer>
+    <p>Criado e desenvolvido por Lucas Xisto</p>
+  </footer>
+  <script src="./script.js"></script>
 </body>
 </html>

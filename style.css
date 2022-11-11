@@ -2,17 +2,22 @@
   margin: 0;
   padding: 0;
   --bg-color: rgb(48,48,48);
-  --txt-color: rgb(255,255,255);
+  --bg-color-2: rgb(155, 155, 155);
+  --txt-color: rgb(255,255,255, 1);
+  --txt-color-2: rgb(0, 0, 0, 1);
+  --opacity-bg-img: .3;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
+  text-align: center;
 }
 
 header {
   background-color: var(--bg-color);
   color: var(--txt-color);
+  text-align: start;
 } 
 
 header h1 {
@@ -22,13 +27,168 @@ header h1 {
   font-style: italic;
 }
 
+a {
+  text-decoration: none;
+  color: var(--txt-color-2);
+}
+
+p {
+  z-index: 2;
+}
+
+#main-menu ul li a {
+  color: var(--txt-color);
+}
+
 ul {
   list-style: none;
 }
 
-nav ul li {
-  display: inline;
-  margin: 0 10px;
+#main-menu ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+#main-menu ul li label , #main-menu ul li {
   text-transform: uppercase;
-  
+  padding: 10px;
+  transition: background 400ms;
+}
+
+#main-menu ul li label:hover {
+  background: var(--bg-color-2);
+  color: var(--txt-color-2);
+}
+
+input#about-me:checked + .about-me {
+  display: flex;
+}
+
+input#my-skills:checked + .my-skills {
+  display: flex;
+}
+
+input#my-projects:checked + .my-projects {
+  display: flex;
+}
+
+input#contact:checked + .contact {
+  display: flex;
+}
+
+input[type =  radio] {
+  display: none;
+}
+
+input#main-info-content:checked + #main-info {
+  display: flex;
+}
+
+#gaming:before , #cooking:before , #basket:before , #rpging:before , #rocking:before {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: var(--opacity-bg-img);
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+input#basket-interests:checked + #basket {
+  display: flex;
+  position: relative;
+}
+
+#basket:before{
+  background-image: url(./img/bigger-img/basket.jpg);
+}
+
+input#gaming-interests:checked + #gaming {
+  display: flex;
+  position: relative;
+}
+
+#gaming:before {
+  background-image: url(./img/bigger-img/gaming.jpg);
+}
+
+input#cooking-interests:checked + #cooking {
+  display: flex;
+  position: relative;
+}
+
+#cooking:before {
+  background-image: url(./img/bigger-img/cooking.jpg);
+}
+
+input#rpg-interests:checked + #rpging {
+  display: flex;
+  position: relative;
+}
+
+#rpging:before {
+  background-image: url(./img/bigger-img/rpg.jpg);
+}
+
+input#rock-interests:checked + #rocking {
+  display: flex;
+  position: relative;
+}
+
+#rocking:before {
+  background-image: url(./img/bigger-img/rock.jpg);
+}
+
+.my-skills, .my-projects, .contact, .dinamic-paragraph {
+  display: none;
+}
+
+footer {
+  background-color: var(--bg-color);
+  padding: 100px;
+}
+
+/*About Me*/
+
+.about-me {
+  display: none;
+  background: var(--bg-color-2) ;
+  max-height: 500px;
+}
+
+.dinamic-paragraph {
+  display: none;
+  max-height: 480px;
+  text-align: justify;
+  margin: 10px;
+  overflow: auto;
+}
+
+#slide ul li {
+  height: 100px;
+  width: 100px;
+}
+
+#slide ul li img {
+  opacity: 75%;
+  filter: grayscale(10);
+  transition: 300ms;
+  position: relative;
+  z-index: 1;
+}
+
+#slide ul li img:hover {
+  opacity: 100%;
+  filter: grayscale(0);
+  transform: scale(1.2);
+  z-index: 2;
+}
+
+#mypicture {
+  left: 100px;
+  width: 500px;
+  display: inline-block;
 }
